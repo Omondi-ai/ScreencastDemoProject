@@ -1,0 +1,31 @@
+{% extends 'teacher/navbar.html ' %}
+
+
+{% block content %}
+
+    <br>
+    {% for articlee in AllArticlees %}
+        <div class="container bg-white shadow-md p-10 form-layout">
+            <h3> {{articlee.title}} </h3>
+            <br>
+
+            {{articlee.content}}
+
+            <br> <br>
+
+            {{articlee.date_posted}}
+        
+
+           
+        </div>
+
+    {% endfor %}
+
+     
+
+
+
+
+        
+
+{% endblock %}

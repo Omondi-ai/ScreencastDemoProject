@@ -1,0 +1,40 @@
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+
+
+          <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    </head>
+ 
+    <br>
+
+    <div class="container bg-white shadow-md p-5 form-layout">
+
+        <h1>login</h1>
+        <form method="POST" autocomplete="öff">
+            {% csrf_token %}
+            {{LoginForm|crispy}}
+
+            <input class="btn btn-success" type="submit" value="Login"/>
+
+
+        </form>
+    </div> 
+    <br> 
+
+
+</form>
+<div class="text-center">
+    <a href="{% url 'register' %}">Dont have an account?</a>
+    <br>
+    <hr>
+    <a href="{% url 'reset_password' %}">forgot password?</a>
+    
+</div>
+
+</html>

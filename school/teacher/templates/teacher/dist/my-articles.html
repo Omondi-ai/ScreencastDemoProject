@@ -1,0 +1,47 @@
+{% extends 'teacher/navbar.html ' %}
+
+{% block content %}
+
+    <br>
+    {% for article in AllArticles %}
+    <div class="container bg-white shadow-md p-10 form-layout">
+        <h3> {{article.title}} </h3>
+
+        {{article.content}}
+
+        <br>
+        <hr>
+
+
+        <a href="{% url 'update-article' article.id %}"> Update Notes</a>
+        <br>
+        <br>
+        
+        <a href="{% url 'delete-article' article.id %}"> Delete Notes</a>
+        {{article.date_posted}}
+
+        <br>
+        <br>
+
+        {% endfor %}
+
+        <br> 
+    </div>
+    <br>
+    <br>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

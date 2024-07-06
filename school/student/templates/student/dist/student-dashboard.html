@@ -1,0 +1,15 @@
+{% extends 'student/navbar2.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<h1>Student dashboard</h1>
+<br>
+
+    <div class="container bg-white shadow-md p-5 form-layout text-center">
+        <h3> Welcome, {{user.last_name}} </h3>
+    </div>
+
+
+{% endblock %}
