@@ -7,7 +7,7 @@ urlpatterns = [
      
      path('create-article2', views.create_article, name="create-article2"),
 
-     path('browse-articles4', views.browse_articles, name="browse-articles4"),
+     path('browse-articles', views.browse_articles, name="browse-articles"),
      
      path('my-articles2', views.my_articles, name = "my-articles2"),
 

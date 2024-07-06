@@ -13,7 +13,7 @@ urlpatterns = [
      
      path('my-articles', views.my_articles, name = "my-articles"),
 
-     path('browse-articles', views.browse_articles, name="browse-articles"),
+     path('browse-articles4', views.browse_articles, name="browse-articles4"),
 
      path('update-article/<str:pk>', views.update_article, name="update-article"),
 

@@ -55,7 +55,7 @@ def browse_articles(request):
     
     context = {'AllArticles': articles}
 
-    return render(request, 'student/browse-articles4.html', context)
+    return render(request, 'student/browse-articles.html', context)
     
 
 

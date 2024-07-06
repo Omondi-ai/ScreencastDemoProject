@@ -59,11 +59,11 @@ def my_articles(request):
 @login_required(login_url='my-login')
 def browse_articles(request):   
 
-    articles = Article.objects.all()
+    articles = Articlee.objects.all()
     
     context = {'AllArticles': articles}
 
-    return render(request, 'teacher/browse-articles.html', context)
+    return render(request, 'teacher/browse-articles4.html', context)
 
 
 @login_required(login_url='/my-login/')
